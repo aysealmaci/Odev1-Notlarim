@@ -59,4 +59,28 @@ void main() {
   final i = arkadaslar.intersection({'ayse'});
 
   print(i);
+
+  //MAP
+
+  final etiketler = {
+    'arkadaslar': 1,
+    'okul': 2,
+    'iş': 3,
+  };
+
+  print(etiketler);
+
+  print(etiketler['is']);
+  etiketler['is'] = 7;
+  print(etiketler);
+
+  if (etiketler.isNotEmpty) {
+    print('boş değil');
+  }
+
+  print(etiketler.containsKey('okul'));
+
+  for (final entry in etiketler.entries) {
+    print('${entry.key}: ${entry.value}');
+  }
 }
